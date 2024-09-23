@@ -43,10 +43,10 @@ export default function Menu() {
           <a href="mailto:savana@youaremysunshine.design" aria-label="Email Savana" className="icon">
             <EmailIcon/>
           </a>
-          <a href="https://www.linkedin.com/in/savana-fernandes/" aria-label="View Savana's LinkedIn profile" className="icon">
+          <a href="https://www.linkedin.com/in/savana-fernandes/" aria-label="View Savana's LinkedIn profile" className="icon" target="_blank">
             <LinkedInIcon />
           </a>
-          <a href="https://www.instagram.com/savage.over.average/" aria-label="See Savana's Instagram" className="icon">
+          <a href="https://www.instagram.com/savage.over.average/" aria-label="See Savana's Instagram" className="icon" target="_blank">
             <InstagramIcon />
           </a>
           <a href='/Savana-Alden-Resume.pdf' className="resume" target="_blank">Resume</a>

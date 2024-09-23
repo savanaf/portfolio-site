@@ -27,10 +27,10 @@ export default function Contact() {
         <a href="mailto:savana@youaremysunshine.design" aria-label="Email Savana">
           <EmailIcon/>
         </a>
-        <a href="https://www.linkedin.com/in/savana-fernandes/" aria-label="View Savana's LinkedIn Profile">
+        <a href="https://www.linkedin.com/in/savana-fernandes/" aria-label="View Savana's LinkedIn Profile" target="_blank">
           <LinkedInIcon />
         </a>
-        <a href="https://www.instagram.com/savage.over.average/" aria-label="See Savana's Instagram" className="icon">
+        <a href="https://www.instagram.com/savage.over.average/" aria-label="See Savana's Instagram" className="icon" target="_blank">
           <InstagramIcon />
         </a>
       </div>
