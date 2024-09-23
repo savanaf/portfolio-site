@@ -49,6 +49,7 @@ export default function Menu() {
           <a href="https://www.instagram.com/savage.over.average/" aria-label="See Savana's Instagram" className="icon">
             <InstagramIcon />
           </a>
+          <a href='/Savana-Alden-Resume.pdf' className="resume" target="_blank">Resume</a>
         </div>
       </div>
     </div>
