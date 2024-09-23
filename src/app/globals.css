@@ -44,7 +44,11 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  body {
+    background: #fff;
+  }
+
+  body .dark {
+    background: #171717;
   }
 }

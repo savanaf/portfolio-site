@@ -8,8 +8,6 @@
     height: 100vh;
     transform: scaleX(0);
     transform-origin: right;
-    background: #101010; 
-    mix-blend-mode: color;
     transition: all 0.3s ease-in;
   }
   
@@ -53,23 +51,6 @@
   }
 
   &.toggle-menu {
-    &:before {
-      transform: scaleX(1);
-    }
-
-    .menu-icon-wrapper {
-      .sunflower {
-        transform: scale(0);
-      }
-
-      &:before{
-        transform: translate(-50%, -50%) scale(1) rotate(45deg);
-      } 
-  
-      &:after {
-        transform: translate(-50%, -50%) scale(1) rotate(-45deg);
-      }
-    }
   }
 
   svg {
@@ -107,6 +88,24 @@
   }
 
   &.toggle-menu {
+    &:before {
+      transform: scaleX(1);
+    }
+
+    .menu-icon-wrapper {
+      .sunflower {
+        transform: scale(0);
+      }
+
+      &:before{
+        transform: translate(-50%, -50%) scale(1) rotate(45deg);
+      } 
+  
+      &:after {
+        transform: translate(-50%, -50%) scale(1) rotate(-45deg);
+      }
+    }
+    
     .list {
       opacity: 1;
       display: flex;
