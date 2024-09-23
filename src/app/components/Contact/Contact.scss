@@ -1,0 +1,53 @@
+.contact {
+  text-align: center;
+  padding: 75px;
+
+  h4 {
+    font-size: 24px;
+    color: var(--gray);
+  }
+
+  .contact-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    width: 30px;
+    height: auto;
+    margin: 35px 20px 20px;
+    transition: transform 0.25s ease;
+
+    g, path {
+      fill: var(--gray);
+    }
+
+    
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+
+  .instagram {
+    width: 35px;
+  }
+
+  .resume {
+    position: absolute;
+  }
+}
+
+.dark {
+  .contact {
+    h4 {
+      color: #fff;
+    }
+  
+    svg {
+      g, path {
+        fill: #fff;
+      }
+    }
+  }
+}
