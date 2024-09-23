@@ -8,7 +8,13 @@
     height: 100vh;
     transform: scaleX(0);
     transform-origin: right;
-    transition: all 0.3s ease-in;
+    background: #3f3f3f;
+    // transition: all 0.3s ease-in;
+
+    // Chrome only solve
+    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
+      mix-blend-mode: color;
+    } 
   }
   
   .menu-icon-wrapper {
@@ -31,9 +37,9 @@
     &:before, &:after {
       content: '';
       display: block;
+      background: #3f3f3f;
       height: 25px;
       width: 2px;
-      background: #3f3f3f;
       position: absolute;
       top: 45%;
       left: 50%;
@@ -48,9 +54,6 @@
         transform: scale(1.1);
       }
     }
-  }
-
-  &.toggle-menu {
   }
 
   svg {
@@ -89,7 +92,7 @@
 
   &.toggle-menu {
     &:before {
-      transform: scaleX(1);
+      transform: scaleX(1); 
     }
 
     .menu-icon-wrapper {

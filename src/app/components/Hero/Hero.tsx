@@ -13,14 +13,12 @@ export default function Hero() {
   const menuOpen = useSelector((state: any) => state.menuOpen)
 
   useEffect(() => {
-    // Use setTimeout to update the message after 2000 milliseconds (2 seconds)
     const timeoutId = setTimeout(() => {
       setLoading(true);
     }, 250);
 
-    // Cleanup function to clear the timeout if the component unmounts
     return () => clearTimeout(timeoutId);
-  }, []); // Empty dependency array ensures the effect runs only once
+  }, []);
   
   return (
     <div className={`hero ${menuOpen ? 'menu-open' :''}`}>

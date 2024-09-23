@@ -87,8 +87,11 @@
       }
     }
 
-    .hero-image {
-      background-blend-mode: luminosity;
+    // Safari only solve
+    @media screen and (-webkit-min-device-pixel-ratio:0) { 
+      .hero-image {
+        background-blend-mode: luminosity;
+      }
     }
   }
 }
