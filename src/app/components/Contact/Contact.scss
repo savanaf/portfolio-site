@@ -36,8 +36,24 @@
   .resume {
     position: absolute;
   }
+
+  .resume-button {
+    display: inline-block;
+    writing-mode: unset;
+    letter-spacing: 5px;
+    padding: 5px 20px;
+    margin-top: 10px;
+
+          
+    @media (max-width: 768px) {
+      background: #fff;
+      color: #3f3f3f;
+      border-color: #3f3f3f;
+    }
+  }
 }
 
+// Toggle dark
 .dark {
   .contact {
     h4 {
@@ -47,6 +63,17 @@
     svg {
       g, path {
         fill: #fff;
+      }
+    }
+
+    .resume-button {
+      border-color: #fff;
+      background: transparent;
+      color: #fff;
+
+      &:hover {
+        background: #fff;
+        color: #3f3f3f;
       }
     }
   }

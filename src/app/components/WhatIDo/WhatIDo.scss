@@ -18,6 +18,10 @@
     width: 65px;
     border: 2px solid #101010;
     border-radius: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
     
     svg {
       position: absolute;
@@ -109,6 +113,7 @@
 
     .toggle-selector {
       border-color: #fff;
+      
       svg {
         transform: translate(55%, -50%);
         
@@ -118,7 +123,6 @@
 
         g {
           fill: #101010;
-          // fill: #dab34c;
         }
       }
     }

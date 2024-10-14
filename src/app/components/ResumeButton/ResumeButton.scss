@@ -1,0 +1,33 @@
+.resume-button {
+  background: rgba(255, 255, 255, 0.6);
+  color: #3f3f3f;
+  border: 3px solid #3f3f3f;
+  border-radius: 20px;
+  padding: 10px 5px;
+  text-orientation: upright;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 15px 6px;
+  font-weight: 900;
+  margin: 10px 0 0;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    border-color: #fff;
+    color: #fff;
+    background: rgba(0,0,0, 0.3);
+  }
+
+  &:hover {
+    background: #3f3f3f;
+    color: #fff;
+    transform: scale(1.05);
+
+    @media (max-width: 768px) {
+      background: rgba(0,0,0, 0.4);
+    }
+  }
+}

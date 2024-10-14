@@ -18,7 +18,7 @@ import Contact from "./components/Contact/Contact";
 export default function App() {
   const toggleBG = useSelector((state: any) => state.toggleState)
   return (
-    <div className={toggleBG ? 'dark' : ''}>
+    <div className={`container ${toggleBG ? 'dark' : ''}`}>
       <Hero />
       <WhatIDo />
       <Portfolio />

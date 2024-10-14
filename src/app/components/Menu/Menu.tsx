@@ -2,6 +2,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 
 import './Menu.scss';
+import ResumeButton from '../ResumeButton/ResumeButton';
 
 const MenuIcon = () => {
   return (
@@ -49,7 +50,7 @@ export default function Menu() {
           <a href="https://www.instagram.com/savage.over.average/" aria-label="See Savana's Instagram" className="icon" target="_blank">
             <InstagramIcon />
           </a>
-          <a href='/Savana-Alden-Resume.pdf' className="resume" target="_blank">Resume</a>
+          <ResumeButton/>
         </div>
       </div>
     </div>

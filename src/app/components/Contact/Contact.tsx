@@ -1,3 +1,4 @@
+import ResumeButton from '../ResumeButton/ResumeButton';
 import './Contact.scss';
 
 const EmailIcon = () => {
@@ -34,6 +35,7 @@ export default function Contact() {
           <InstagramIcon />
         </a>
       </div>
+      <ResumeButton/>
     </div>
   )
 }
