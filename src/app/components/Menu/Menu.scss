@@ -8,7 +8,7 @@
     height: 100vh;
     transform: scaleX(0);
     transform-origin: right;
-    background: #3f3f3f;
+    background: var(--gray);
 
     // Chrome only solve
     @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
@@ -36,7 +36,7 @@
     &:before, &:after {
       content: '';
       display: block;
-      background: #3f3f3f;
+      background: var(--gray);
       height: 25px;
       width: 2px;
       position: absolute;
@@ -121,10 +121,10 @@
         svg {
           height: 40px;
           g, path {
-            fill: #3f3f3f;
+            fill: var(--gray);
             
             @media (max-width: 768px) {
-              fill: #fff;
+              fill: var(--white);
             }
           }
         }

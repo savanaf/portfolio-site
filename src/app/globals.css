@@ -1,7 +1,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --black: #111;
+  --darkGray: #101010;
   --gray: #3f3f3f;
+  --lightGray: #f3f3f3;
+  --white: #fff;
   --yellow: #dab34c;
 }
 
@@ -26,6 +31,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: all 0.2s ease;
+}
+
+.container, .portfolio .portfolio-item {
+  transition: background 0.2s ease;
 }
 
 .dark {

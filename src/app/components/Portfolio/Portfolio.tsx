@@ -38,10 +38,10 @@ export default function Portfolio() {
         )) }
       </div>
 
-      <div className="design-item design" id="design">
+      <div className="design-item" id="design">
         <a href="https://www.instagram.com/savage.over.average/" target="_blank"></a>
         { DESIGN.map((image) => (
-          <div key={0} className="portfolio-image" style={{backgroundImage: `url(/portfolio-images/${image}.jpg)`}}></div>
+          <div key={image} id={image} className="portfolio-image" style={{backgroundImage: `url(/portfolio-images/${image}.jpg)`}}></div>
         ))}
       </div>
     </div>

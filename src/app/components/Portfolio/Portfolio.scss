@@ -12,8 +12,8 @@
     height: 400px;
     position: relative;
     display: flex;
-    color: #101010;
-    background: #fbfbfb;
+    color: var(--darkGray);
+    background: var(--lightGray);
 
     &:nth-child(even) {
       .arrow-container {
@@ -51,7 +51,7 @@
       letter-spacing: 2px;
 
       @media (max-width: 1000px) {
-        font-size: 24px;
+        font-size: 22px;
       }
     }
 
@@ -90,7 +90,7 @@
           height: 1px;
           bottom: 0;
           left: -101%;
-          background-color: #101010;
+          background-color: var(--darkGray);
           transform-origin: bottom right;
           transition: transform 0.25s ease-out;
         }
@@ -98,7 +98,8 @@
 
       p {
         margin: 20px 0;
-        width: 75%;
+        width: 80%;
+        font-size: 14px;
       }
     }
 
@@ -139,6 +140,74 @@
     }
   }
 
+  .capn-crunch {
+    &:before {
+      background-image: url('../../assets/images/portfolio/capn-crunch.jpg');
+    }
+  }
+
+  .att {
+    &:before {
+      background-image: url('../../assets/images/portfolio/att.jpg');
+    }
+  }
+
+  .kex {
+    &:before {
+      background-image: url('../../assets/images/portfolio/kex.jpg');
+    }
+  }
+
+  .fbh {
+    &:before {
+      background-image: url('../../assets/images/portfolio/fbh.jpg');
+    }
+  }
+
+  .apple:before {
+      background-image: url('../../assets/images/portfolio/apple.jpg');
+  }
+
+  &.toggle {
+    .portfolio-item {
+      background: var(--black);
+      color: var(--white);
+
+      a {
+        &:after {
+          background-color: var(--white);
+        }
+      } 
+    }
+  }
+
+  .ux-container {
+    margin: 150px 0;
+    
+    @media (max-width: 768px) {
+      margin: 75px 0;
+    }
+
+    .portfolio-item {
+      flex-direction: row-reverse;
+      height: 450px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+      }
+      
+      &:nth-child(even) {
+        flex-direction: row;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+          height: auto;
+        }  
+      }
+    }
+  }
+
   .design-item {
     display: flex;
     height: auto;
@@ -173,6 +242,40 @@
           background-size: cover;
         }
       }
+
+      &#provincial-beard-co {
+        order: 1;
+      }
+      
+      &#lipstick-and-cowboy-boots {
+        order: 3;
+      }
+
+      &#bake-and-cake {
+        order: 2;
+      }
+      
+      @media (max-width: 768px) {
+        &#lipstick-and-cowboy-boots {
+          order: 2;
+        }
+  
+        &#bake-and-cake {
+          order: 3;
+        }
+      }
+
+      &#biggie {
+        order: 4;
+      }
+
+      &#step-out-of-line {
+        order: 5;
+      }
+
+      &#koda {
+        order: 6;
+      }
     }
 
     a {
@@ -182,69 +285,6 @@
       top: 0;
       left: 0;
       z-index: 1;
-    }
-  }
-
-  .capn-crunch {
-    &:before {
-      background-image: url('../../assets/images/portfolio/capn-crunch.jpg');
-    }
-  }
-
-  .att {
-    &:before {
-      background-image: url('../../assets/images/portfolio/att.jpg');
-    }
-  }
-
-  .kex {
-    &:before {
-      background-image: url('../../assets/images/portfolio/kex.jpg');
-    }
-  }
-
-  .fbh {
-    &:before {
-      background-image: url('../../assets/images/portfolio/fbh.jpg');
-    }
-  }
-
-  .apple:before {
-      background-image: url('../../assets/images/portfolio/apple.jpg');
-  }
-
-  &.toggle {
-    .portfolio-item {
-      background: #141414;
-      color: #fff;
-
-      a {
-        &:after {
-          background-color: #fff;
-        }
-      } 
-    }
-  }
-
-  .ux-container {
-    margin: 50px 0;
-    .portfolio-item {
-      flex-direction: row-reverse;
-      height: 450px;
-
-      @media (max-width: 768px) {
-        flex-direction: column;
-        height: auto;
-      }
-      
-      &:nth-child(even) {
-        flex-direction: row;
-        
-        @media (max-width: 768px) {
-          flex-direction: column;
-          height: auto;
-        }  
-      }
     }
   }
 }
@@ -275,7 +315,7 @@
   height: 4px;
   margin: 29px 0;
   border-radius: 9999px;
-  background-color: #fff;
+  background-color: var(--white);
   transition: transform 0.15s ease;
 }
 
@@ -288,7 +328,7 @@
   width: 45px;
   height: 4px;
   border-radius: 9999px;
-  background-color: #fff;
+  background-color: var(--white);
   transform-origin: calc(100% - 2px) 50%;
 }
 
