@@ -182,12 +182,6 @@
   }
 
   .ux-container {
-    margin: 150px 0;
-    
-    @media (max-width: 768px) {
-      margin: 75px 0;
-    }
-
     .portfolio-item {
       flex-direction: row-reverse;
       height: 450px;
